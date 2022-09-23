@@ -1,4 +1,4 @@
-name: Verify Pull Request Labeling
+name: Add new PR to Project
 
 on:
   pull_request:

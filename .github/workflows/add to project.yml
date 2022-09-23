@@ -8,11 +8,11 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  check_pr_labels:
+  add-pr-to-project:
     permissions:
       repository-projects: write
       
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
               
       - name: Add To GitHub projects

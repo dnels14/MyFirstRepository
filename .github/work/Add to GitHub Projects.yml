@@ -2,7 +2,8 @@ name: Add to Project
 
 on:
   pull_request:
-    types: [opened]
+    types: 
+      - opened
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -19,7 +20,7 @@ jobs:
         uses: actions/add-to-project@v0.3.0
         with:
           # URL of the project to add issues to
-          project-url: https://github.com/users/Myoldmopar/projects/1
+          project-url: https://github.com/users/dnels14/projects/1/views/1
           # A GitHub personal access token with write access to the project
           github-token: ${{ secrets.GITHUB_TOKEN }}
           # A comma-separated list of labels to use as a filter for issue to be added
